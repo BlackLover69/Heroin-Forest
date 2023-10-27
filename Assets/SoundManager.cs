@@ -36,6 +36,6 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void Save()
     {
-    PlayerPrefs.SetFloat("musicVolume", volumeSlider.value)
+        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 }
