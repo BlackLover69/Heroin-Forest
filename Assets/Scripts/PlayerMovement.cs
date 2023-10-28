@@ -13,22 +13,30 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
 
+    float actionCooldown = 1f;
+    float timeSinceAction = 0f;
+
     bool crouch = false;
 
     // Update is called once per frame
     void Update()
     {
-
+        timeSinceAction += Time.deltaTime;
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
-            jump = true;
-            animator.SetBool("IsJumping", true);   
+            if (timeSinceAction > actionCooldown)
+            {
+                timeSinceAction = 0f;
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+             
         }
-
+        
        /* if (Input.GetButtonDown("Crouch")) // crouching not needed
         {
             crouch = true;
