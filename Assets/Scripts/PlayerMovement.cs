@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
 
-    float actionCooldown = 1f;
+    float actionCooldown = 0.75f;
     float timeSinceAction = 0f;
 
     bool crouch = false;
@@ -37,13 +37,13 @@ public class PlayerMovement : MonoBehaviour
              
         }
         
-       /* if (Input.GetButtonDown("Crouch")) // crouching not needed
+        if (Input.GetButtonDown("Crouch")) // crouching not needed
         {
             crouch = true;
         } else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
-        }*/
+        }
     }
 
     public void OnLanding ()
