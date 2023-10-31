@@ -37,13 +37,13 @@ public class PlayerMovement : MonoBehaviour
              
         }
         
-        if (Input.GetButtonDown("Crouch")) // crouching not needed
+       /* if (Input.GetButtonDown("Crouch")) // crouching not needed
         {
             crouch = true;
         } else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
-        }
+        }*/
     }
 
     public void OnLanding ()
