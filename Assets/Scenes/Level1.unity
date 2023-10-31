@@ -15689,6 +15689,7 @@ GameObject:
   - component: {fileID: 1766113883}
   - component: {fileID: 1766113887}
   - component: {fileID: 1766113886}
+  - component: {fileID: 1766113888}
   m_Layer: 7
   m_Name: Enemy1
   m_TagString: Enemy
@@ -15856,6 +15857,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1766113888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766113882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d4d12c10e57274e8c7df83aa9751b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1766113883}
+  maxHealth: 100
 --- !u!1 &1774617075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16231,10 +16246,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1828542200}
   attackPoint: {fileID: 1058088412}
-  attackRange: 1.4
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  attackRange: 1.4
+  attackDamage: 40
 --- !u!1 &1848626531
 GameObject:
   m_ObjectHideFlags: 3
