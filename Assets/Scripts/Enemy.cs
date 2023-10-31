@@ -9,8 +9,10 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
 
-    // Update is called once per frame
-    void Update()
+    public int damage = 50;
+    
+    // Start is called at the start of program
+    void Start()
     {
         currentHealth = maxHealth;
     }

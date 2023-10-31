@@ -15871,6 +15871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1766113883}
   maxHealth: 100
+  damage: 50
 --- !u!1 &1774617075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16251,6 +16252,7 @@ MonoBehaviour:
     m_Bits: 128
   attackRange: 1.4
   attackDamage: 40
+  attackRate: 2
 --- !u!1 &1848626531
 GameObject:
   m_ObjectHideFlags: 3

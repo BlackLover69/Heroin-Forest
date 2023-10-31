@@ -22,16 +22,15 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
-                Attack();
+                animator.SetTrigger("Attack");
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
     }
 
-    void Attack()
-    {
-        animator.SetTrigger("Attack");
 
+    public void Attack()
+    {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);   
 
         foreach(Collider2D enemy in hitEnemies)
