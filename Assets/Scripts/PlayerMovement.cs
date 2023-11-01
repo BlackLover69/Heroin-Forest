@@ -46,6 +46,16 @@ public class PlayerMovement : MonoBehaviour
         }*/
     }
 
+    public void Stop()
+    {
+        GetComponent<PlayerMovement>().runSpeed = 0f;
+    }
+
+    public void Go()
+    {
+        GetComponent<PlayerMovement>().runSpeed = 25f;
+    }
+
     public void OnLanding ()
     {
         animator.SetBool("IsJumping", false);

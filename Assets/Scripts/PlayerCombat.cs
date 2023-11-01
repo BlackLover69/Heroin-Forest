@@ -10,10 +10,19 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
 
     public float attackRange = 0.5f;
-    public int attackDamage = 40;
+    public int attackDamage = 1;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+
+    public int maxHealth = 1;
+    int currentHealth;
+
+    // Start is called at the start of program
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
 
     // Update is called once per frame
     void Update()
@@ -25,9 +34,9 @@ public class PlayerCombat : MonoBehaviour
                 animator.SetTrigger("Attack");
                 nextAttackTime = Time.time + 1f / attackRate;
             }
+            
         }
     }
-
 
     public void Attack()
     {
@@ -35,7 +44,7 @@ public class PlayerCombat : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyCombat>().TakeDamage(attackDamage);
         }
     }
 
@@ -45,5 +54,27 @@ public class PlayerCombat : MonoBehaviour
             return;
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        animator.SetTrigger("Hurt");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("You died!");
+
+        animator.SetBool("IsDead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 }
