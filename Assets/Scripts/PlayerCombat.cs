@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -59,7 +61,7 @@ public class PlayerCombat : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+        Debug.Log(currentHealth);
         animator.SetTrigger("Hurt");
 
         if (currentHealth <= 0)
@@ -67,14 +69,14 @@ public class PlayerCombat : MonoBehaviour
             Die();
         }
     }
-
+    
     void Die()
     {
-        Debug.Log("You died!");
-
         animator.SetBool("IsDead", true);
 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        SceneManager.LoadScene("MainMenu");
     }
 }
