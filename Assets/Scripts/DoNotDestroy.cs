@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class DoNotDestroy : MonoBehaviour
 {
-    private static bool created = false;
+    
 
-    void Awake()
+    private void Awake()
     {
-        if (!created)
+        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
+        if(musicObj.Length>1)
         {
-            // If this is the first instance, mark it as created and do not destroy it
-            DontDestroyOnLoad(this.gameObject);
-            created = true;
-        }
-        else
-        {
-            // If a duplicate is found, destroy it
             Destroy(this.gameObject);
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 }

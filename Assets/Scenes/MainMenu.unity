@@ -854,7 +854,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1720,8 +1720,9 @@ GameObject:
   - component: {fileID: 1450239975}
   - component: {fileID: 1450239974}
   - component: {fileID: 1450239976}
+  - component: {fileID: 1450239977}
   m_Layer: 0
-  m_Name: MusicPlayer
+  m_Name: MusicControl
   m_TagString: GameMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1739,7 +1740,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f8acf8716e34edf49a9e5837cbd5be1d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.025
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1848,6 +1849,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25ad9da45366fdc48873b7ad40e60659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1450239977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450239972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5e9cded946f084d80d32d884a7e298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1632895960
