@@ -76,6 +76,6 @@ public class PlayerCombat : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("DeathScreen");
     }
 }

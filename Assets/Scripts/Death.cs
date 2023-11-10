@@ -12,7 +12,7 @@ public class Death : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("DeathScene");
         }
     }
 }
