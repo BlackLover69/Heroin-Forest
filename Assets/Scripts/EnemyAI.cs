@@ -74,13 +74,13 @@ public class EnemyAI : MonoBehaviour
             if (target.position.y - 1f > rb.transform.position.y && rb.velocity.y == 0 && path.path.Count < 20)
             {
                 rb.AddForce(Vector2.up * speed * jumpModifier);
-
+                
             }
         }
 
         //Movement
         rb.AddForce(force);
-        
+
         if (rb.velocity.x > speed)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);

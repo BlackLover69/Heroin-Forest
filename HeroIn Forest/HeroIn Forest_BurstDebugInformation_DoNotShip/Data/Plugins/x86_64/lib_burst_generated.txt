@@ -1,4 +1,4 @@
-Library: C:\Kuba\PRG\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+Library: F:\KUBA\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-15
 --target=AVX2
@@ -55,10 +55,10 @@ Library: C:\Kuba\PRG\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="HeroIn Forest_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Kuba\PRG\Unity\Heroin\Temp\Burst
+--temp-folder=F:\KUBA\Unity\Heroin\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=C:\Kuba\PRG\Unity\Heroin\Library\Burst
---output=C:\Kuba\PRG\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=F:\KUBA\Unity\Heroin\Library\Burst
+--output=F:\KUBA\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -148,10 +148,10 @@ Library: C:\Kuba\PRG\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="HeroIn Forest_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Kuba\PRG\Unity\Heroin\Temp\Burst
+--temp-folder=F:\KUBA\Unity\Heroin\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=C:\Kuba\PRG\Unity\Heroin\Library\Burst
---output=C:\Kuba\PRG\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=F:\KUBA\Unity\Heroin\Library\Burst
+--output=F:\KUBA\Unity\Heroin\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10

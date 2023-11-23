@@ -10,7 +10,7 @@ public class NextScene : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("EndScreen");
         }
     }
 }
